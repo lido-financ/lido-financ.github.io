@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Lido",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/lido.png",
+    "imageResize": true,
+    "usedWebp": true,
+    "mbrsiteDomain": "8smcp9yvo1",
+    "robotsSwitcher": true,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://llido-financ.github.io/",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://llido-financ.github.io/sitemap.xml\n\n"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Lido Finance™ | Home Official Site",
+        "meta_descr": "The Lido Finance DAO is a Decentralized Autonomous Organization that decides on the key parameters of liquid staking protocols through the voting power of governance ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://lido.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/lido-fi.png\" alt=\"Lido Fi\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZDSftOxqu",
+          "_anchor": "image04-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Lido™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://llido-financ.github.io/\" class=\"text-primary\"><b>Lido</b> Finance</a>: Unlocking Staked Assets for DeFi Liquidity\n<br>\n<br><b>Introduction</b><br>In the world of decentralized finance (DeFi), <a href=\"https://lido.fi/\" class=\"text-primary\">Lido</a> Finance has emerged as a pioneering platform, revolutionizing the way users unlock liquidity from staked assets. By offering a secure and efficient solution, Lido Finance enables users to stake their assets on various blockchain networks while simultaneously providing liquidity for other DeFi protocols. In this article, we will explore the intricacies of Lido Finance, dissect its unique features, and examine its role in driving the growth of decentralized finance.\n<br>\n<br><b>The Need for Staked Asset Liquidity</b><br>Staked assets, such as tokens locked in proof-of-stake (PoS) networks, have traditionally been illiquid and inaccessible to users. This lack of liquidity prevents users from fully capitalizing on the value of their staked assets. Lido Finance addresses this need by creating a bridge between staked assets and DeFi protocols, allowing users to unlock liquidity without compromising the security or integrity of their staked holdings.\n<br>\n<br><b>Understanding Lido Finance's Technology</b><br>Lido Finance employs innovative technology to facilitate the seamless liquidity provision of staked assets. Through a robust decentralized network of nodes, Lido Finance acts as a trusted intermediary, handling the technical complexities of staking and providing users with liquid representation of their staked assets. This technology ensures that users can access the benefits of staking while simultaneously participating in the vibrant DeFi ecosystem.\n<br>\n<br><b>The Benefits of Lido Finance</b><br>Lido Finance offers several advantages that make it an attractive option for users seeking liquidity from staked assets:\n<br>\n<br>a. Liquidity Provision: Lido Finance provides a continuous source of liquidity for staked assets, enabling users to access the value of their holdings without waiting for lengthy unstaking periods. This liquidity unlocks new possibilities for users, allowing them to engage in DeFi activities such as yield farming, lending, and trading.\n<br>\n<br>b. Security and Trust: Lido Finance prioritizes the security of staked assets. By implementing a decentralized and trustless infrastructure, users can be confident that their staked assets are protected while still benefiting from the liquidity provided by Lido Finance. The platform undergoes rigorous audits and employs robust security measures to ensure the safety of user funds.\n<br>\n<br>c. Simplified User Experience: Lido Finance streamlines the process of staking and liquidity provision, making it accessible to a broader range of users. The platform offers a user-friendly interface and guides users through the necessary steps, eliminating the complexities associated with interacting with PoS networks directly.\n<br>\n<br>d. Enhanced Staking Rewards: Lido Finance allows users to maximize their staking rewards by providing liquidity to various DeFi protocols. Users can earn additional rewards on top of their staking rewards, further optimizing their overall returns.\n<br>\n<br><b>Use Cases and Applications</b><br>Lido Finance opens up a multitude of use cases and applications within the DeFi ecosystem:\n<br>a. Yield Farming: Users can utilize Lido Finance to stake their assets and simultaneously participate in yield farming strategies. By supplying liquidity to DeFi protocols, users can earn additional rewards on their staked assets, enhancing their overall yield.\n<br>\n<br>b. Collateralization: Staked assets on Lido Finance can serve as collateral for borrowing in DeFi lending protocols. Users can unlock liquidity from their staked assets and utilize them as collateral to access loans, enabling them to manage their financial needs more effectively.\n<br>\n<br>c. Trading and Swapping: Lido Finance provides users with liquid representations of their staked assets, allowing them to seamlessly trade or swap these assets on decentralized exchanges. This flexibility enables users to capitalize on market opportunities without sacrificing the benefits of staking.\n<br>\n<br>d. Governance Participation: Lido Finance actively engages users in blockchain governance. Users who stake their assets on Lido Finance can still participate in network governance decisions and earn governance rewards, ensuring their voices are heard in the evolution of the underlying blockchain networks.\n<br>\n<br><b>Lido Finance's Future Outlook</b><br>As the DeFi space continues to evolve, Lido Finance is poised to play a pivotal role in unlocking the potential of staked assets. With its commitment to security, simplicity, and liquidity provision, Lido Finance is well-positioned to become a cornerstone of the DeFi ecosystem. As more users recognize the benefits of staked asset liquidity, Lido Finance is expected to witness significant growth and adoption.<br>\n<br><b>Conclusion</b><br>Lido Finance has emerged as a trailblazer in the DeFi landscape, bridging the gap between staked assets and liquidity provision. By offering a secure and efficient solution, Lido Finance enables users to unlock the value of their staked assets while participating in the vibrant DeFi ecosystem. Through its innovative technology, emphasis on security, simplified user experience, and a wide range of use cases, Lido Finance is driving the growth of decentralized finance and empowering users to make the most of their staked holdings. As the adoption of staked asset liquidity increases, Lido Finance is poised to become an integral part of theDeFi ecosystem, providing a robust platform for users to unlock liquidity, maximize returns, and actively participate in the evolution of blockchain networks. With its forward-thinking approach and commitment to user empowerment, Lido Finance stands at the forefront of the staked asset liquidity revolution, shaping the future of decentralized finance.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZDSgdgE18",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
